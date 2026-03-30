@@ -36,7 +36,7 @@ Each service is built as a static Vite app and served by its own Nginx instance.
 
 2. Build and start all services:
    ```bash
-   docker compose up --build
+   DOCKER_BUILDKIT=1 docker compose up --build
    ```
 
 3. Open [http://localhost:5000](http://localhost:5000)
